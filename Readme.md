@@ -23,4 +23,8 @@ Install dependancies and Dev-dependancies
 
 ## See results
 
-Run following commands to 
+Run following commands to see the results
+
+```bash
+  npm run devStart
+```
