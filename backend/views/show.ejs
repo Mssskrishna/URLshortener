@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            box-sizing: border-box;
+            display: grid;
+            place-items: center;
+        }
+
+        div {
+            border: 1px solid gray;
+            box-shadow: 1px 1px 1px black;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            padding: 4px;
+            width: 50%;
+            border-radius: 10px;
+        }
+        div p{
+            word-break: break-all;
+            /* width: 50%; */
+        }
+        h2{
+            text-decoration: underline;
+        }
+        span{
+            color: red;
+        }
+    </style>
+</head>
+
+<body>
+    <h2><span>U</span>RL <span>S</span>hotener</h2>
+        
+    <div>
+        <p>
+            ShortURL: <br>
+            <a href="/<%= shorturl %>">https://localhost/<%= shorturl %></a> <br>
+        </p>
+        <p>Your url: <br>
+            <!-- <a href=">LongUrl</a>
+              -->
+              <%= url %>
+        </p>
+    </div>
+</body>
+
+</html>

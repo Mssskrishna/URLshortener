@@ -1,11 +1,25 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <title><%= title %></title>
-    <link rel='stylesheet' href='/stylesheets/style.css' />
-  </head>
-  <body>
-    <h1><%= title %></h1>
-    <p>Welcome to <%= title %></p>
-  </body>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./stylesheets/style.css">
+    <style>
+        input{
+            padding: 20px;
+        }
+        input[type="submit"]{
+            background-color: #25a7da;
+            color: #fff;
+        }
+    </style>
+</head>
+<body>
+    <form action="/upload" method="post">
+        <!-- <label for="Upload URL">Paste Long URL</label> -->
+         <input type="text" name="longurl" id="longurl" placeholder="Paste long url here">
+         <input type="submit" value="Short URL">
+    </form>
+</body>
 </html>
